@@ -37,7 +37,7 @@ const FileUpload: React.FC = () => {
                 formData.append("totalChunks", `${totalChunks}`);
                 formData.append("originalFilename", selectedFile.name);
 
-                fetch("http://20.189.120.222/upload", {
+                fetch("https://talviruusu.com/upload", {
                     method: "POST",
                     body: formData,
                 })
